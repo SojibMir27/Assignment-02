@@ -7,6 +7,7 @@
 
 .font-description {
   font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.50);
 }
 
 * {
@@ -77,22 +78,76 @@ body {
 .hero-container p {
   font-size: 1.37rem;
 }
+/* card section style */
+.card-container-main {
+  margin-top: 120px;
+}
+.card-container-name h1 {
+  text-align: center;
+  font-size: 3.13rem;
+  font-weight: bold;
+  margin-bottom: 1.1rem;
+}
+.card-container-name p {
+  text-align: center;
+  font-size: 1.38rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20;
+}
+.card {
+  margin-top: 49px;
+}
+.card img {
+  margin-bottom: 30px;
+}
+.card h3 {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  font-size: 1.38rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card h2 {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  font-size: 1.38rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.card-btn {
+  display: flex;
+  text-align: center;
+  margin: 30px auto 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(233, 90, 8);
+  padding: 10px 55px;
+  font-weight: 700;
+  border: none;
+  font-size: 1.5rem;
+}
 
 /*----------Footer Section Style----------*/
 
 /*----------Responsive Section Start----------*/
 @media screen and (max-width: 576px) {
   .navigation-bar,
-  .hero-container {
+  .hero-container,
+  .card-container-main {
     max-width: 90%;
   }
   .nav-links > li {
     display: none;
   }
-  .navigation-bar{
+  .navigation-bar {
     margin-top: 67px;
   }
-  .navigation-bar > img{
+  .navigation-bar > img {
     width: 63px;
     height: 36px;
   }
@@ -109,5 +164,29 @@ body {
   }
   .hero-container p {
     font-size: 0.95rem;
+  }
+
+  .card-container-main {
+    width: 90%;
+    margin-top: 65px;
+  }
+  .card-container-name h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .card-container-name p{
+    font-size: 1.1rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card-btn {
+    padding: 15px 11px;
+    font-weight: 500;
+    font-size: 1.4rem;
   }
 }
