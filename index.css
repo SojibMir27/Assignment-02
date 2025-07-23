@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.font-title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+}
+
+.font-description {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(245, 248, 255);
+  font-family: "Inter", sans-serif;
+}
+
+/*----------Common Section----------*/
+.display-flex {
+  display: flex;
+}
+
+.common-size {
+  max-width: 1140px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.common-color {
+  color: rgba(233, 90, 8, 1);
+}
+/*----------Header Section Style----------*/
+/* nav section start style */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin-left: 48px;
+}
+.home-color {
+  color: rgb(37, 36, 50);
+  font-weight: bold;
+}
+.others-color {
+  color: rgb(137, 135, 161);
+}
+.color-3 {
+  color: rgba(0, 0, 0, 1);
+}
+
+/*----------Main Section Style----------*/
+
+/*----------Footer Section Style----------*/
+
+/*----------Responsive Section Start----------*/
+@media screen and (max-width: 576px) {
+  .navigation-bar {
+    max-width: 90%;
+  }
+  .nav-links > li {
+    display: none;
+  }
+}
