@@ -64,15 +64,50 @@ body {
 }
 
 /*----------Main Section Style----------*/
+/* hero section style start */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto 0px;
+}
+.hero-container h1 {
+  font-size: 4rem;
+}
+.hero-container p {
+  font-size: 1.37rem;
+}
 
 /*----------Footer Section Style----------*/
 
 /*----------Responsive Section Start----------*/
 @media screen and (max-width: 576px) {
-  .navigation-bar {
+  .navigation-bar,
+  .hero-container {
     max-width: 90%;
   }
   .nav-links > li {
     display: none;
+  }
+  .navigation-bar{
+    margin-top: 67px;
+  }
+  .navigation-bar > img{
+    width: 63px;
+    height: 36px;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .hero-container img {
+    width: 111%;
+  }
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+  .hero-container p {
+    font-size: 0.95rem;
   }
 }
