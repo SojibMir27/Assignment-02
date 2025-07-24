@@ -165,9 +165,10 @@ body {
   left: 500px;
   top: 330px;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.22));
 }
 
-/* latestdeals section style */
+/* latest-deals section style */
 .latest-deals-container {
   text-align: center;
   margin-top: 120px;
@@ -182,6 +183,92 @@ body {
 .latest-deals-container p {
   font-size: 1.38rem;
 }
+
+/* parcent section style */
+.parcent-container {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  height: 423px;
+}
+.parcent-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 367px;
+  height: 423px;
+}
+.parcent-left-1 {
+  background-image: url(./assets/deal-bloom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  width: 367px;
+  height: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(90%);
+}
+.parcent-left-1 h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+}
+.parcent-left-1 a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+}
+.parcent-left-2 {
+  background-image: url(./assets/deal-ana.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  width: 367px;
+  height: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(80%);
+}
+.parcent-left-2 h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+}
+.parcent-left-2 a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+}
+.parcent-right {
+  text-align: center;
+  background-image: url(./assets/deal-zabo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 32px 32px;
+  width: 753px;
+  height: 423px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(80%);
+}
+.parcent-right h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5rem;
+}
+.parcent-right a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.75rem;
+}
+
 /*----------Footer Section Style----------*/
 
 /*----------Responsive Section Start----------*/
@@ -282,5 +369,29 @@ body {
     font-size: 1.1rem;
     width: 99%;
     margin: 0 auto;
+  }
+
+  .parcent-container {
+    margin-top: 51px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .parcent-right {
+    width: 367px;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
+    border-radius: 20px;
+  }
+  .parcent-right h3 {
+    font-size: 1.35rem;
+  }
+  .parcent-right a {
+    font-size: 1.12rem;
   }
 }
